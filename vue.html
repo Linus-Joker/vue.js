@@ -9,6 +9,20 @@
     <p v-if ="seen">你看到我了</p>
   </div>
   
+ <div class="app4">
+   <ul>
+     <li v-for ="todo in todos">
+       {{todo}}
+     </li>
+   </ul>
+   
+      <ul>
+     <li v-for ="todo in home">
+       {{todo.sister}}
+     </li>
+   </ul>
+ </div>
+  
   
  <script src="https://unpkg.com/vue@2.4.4/dist/vue.js"></script> 
 
