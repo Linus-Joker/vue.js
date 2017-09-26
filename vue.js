@@ -2,7 +2,7 @@ var app = new Vue({
   el:".app",
   data:{
   message:'hello',
-    seen:false
+    seen:false    //
   
 }
   
@@ -16,3 +16,6 @@ var app3 = new Vue({
 }
   
 });
+
+
+https://jsbin.com/yunajupida/edit?html,js,output
