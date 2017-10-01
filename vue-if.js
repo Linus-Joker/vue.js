@@ -6,7 +6,7 @@
         {{color}}
       </li>
       
-      <li v-if="loads">
+      <li v-if="load">
         {{color2}}
       </li>
     </ul>
@@ -22,7 +22,7 @@ var app =new Vue({
     color:'blue',
     load:true,
     color2:'yellow',
-    loads:true
+    
       
   }
   
