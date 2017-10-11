@@ -21,7 +21,7 @@ var app = new Vue({
   el:'#app',
   data:{
     
-    message:'請點選數量!!',
+    message:'數量:',
     number:1
   },
   methods:{
