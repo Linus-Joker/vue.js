@@ -1,0 +1,66 @@
+html 部分
+
+  <div id="app">
+    {{message}}
+    
+    
+    <table>
+    <tr>
+      
+      <td>產品</td>
+      <td>價格</td>
+      <td>數量</td>
+      <td>總價</td>
+    </tr>
+    
+    <tr>
+      <td>A</td>
+      
+      <td>100</td>
+      
+      <td><input type="text" v-model="number">
+      <input type="button" value="+" @click="add">
+      <input type="button" value="-" @click="sub">      
+      </td>
+      
+      <td>{{total}}</td>
+      
+      
+    </tr>
+    
+    </table>
+    
+  </div>
+  
+  
+  JS 部分
+  
+  new Vue({
+  el:"#app",
+  data:{
+    message:'hello',
+    number:1
+  },
+  
+  methods:{
+    add:function(){
+    this.number = this.number + 1   
+
+  },
+    sub:function(){
+      
+      this.number = this.number - 1
+    }
+       
+  },
+  
+  computed:{
+    total:function(){
+      
+      return 100 * this.number
+      
+    }
+       
+  }
+  
+})
