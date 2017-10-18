@@ -5,6 +5,9 @@ HTML 部分
     
     <input type="text" v-model="number">
     <input type="button" value="計算" @click="src()">
+    <p>{{message2}}</p> 
+    <p>{{message3}}</p>
+    <p>{{message4}}</p>
   
   
   
@@ -31,8 +34,9 @@ HTML 部分
       var min = this.number % 60;
       
       var total = hour + " hour " + min + " min "
-           
-      console.log(total);
+
+      this.message3 = '需要:' + total; 
+      
       
     }
     
