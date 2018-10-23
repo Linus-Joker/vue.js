@@ -33,6 +33,7 @@ const webpack = require('webpack')
 module.exports = {
   ...
   // 新增plugins
+  
   plugins: [
     new webpack.ProvidePlugin({
         '$': "jquery",
