@@ -23,6 +23,7 @@ $ npm run dev  (run)
 # 另外會用到BS的話應該也會用到jQuery和popper，這時就有vue和jQuery混用的狀況
    
 $ npm install --save jquery
+
 $ npm install --save popper.js
 
 接著到build/webpack.base.conf.js加入以下設定
