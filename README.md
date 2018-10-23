@@ -20,7 +20,7 @@ $ npm run dev  (run)
 
    之後要是有改就去Git 找 sass-loader來看
    
-   另外會用到BS的話應該也會用到jQuery和popper，這時就有vue和jQuery混用的狀況
+#另外會用到BS的話應該也會用到jQuery和popper，這時就有vue和jQuery混用的狀況
    
 $ npm install --save jquery
 $ npm install --save popper.js
