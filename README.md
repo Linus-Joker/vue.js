@@ -29,23 +29,33 @@ $ npm install --save popper.js
 接著到build/webpack.base.conf.js加入以下設定
 
 // 最上方加入一個webpack
+
 const webpack = require('webpack')
+
 module.exports = {
   ...
   // 新增plugins
   
   plugins: [
+  
     new webpack.ProvidePlugin({
+    
         '$': "jquery",
+	
         'jQuery': "jquery",
+	
         'Popper': 'popper.js'
+	
     })
+    
   ],
-	...
+
 }
 
 最後到src/main.js中把BootStrap載入
 
 // 新增這兩行BootStrap的東西
+
 import 'bootstrap';
+
 import 'bootstrap/dist/css/bootstrap.css';
