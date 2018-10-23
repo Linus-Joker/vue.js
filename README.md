@@ -20,7 +20,30 @@ $ npm run dev  (run)
 
    之後要是有改就去Git 找 sass-loader來看
    
-#另外會用到BS的話應該也會用到jQuery和popper，這時就有vue和jQuery混用的狀況
+# 另外會用到BS的話應該也會用到jQuery和popper，這時就有vue和jQuery混用的狀況
    
 $ npm install --save jquery
 $ npm install --save popper.js
+
+接著到build/webpack.base.conf.js加入以下設定
+
+// 最上方加入一個webpack
+const webpack = require('webpack')
+module.exports = {
+  ...
+  // 新增plugins
+  plugins: [
+    new webpack.ProvidePlugin({
+        '$': "jquery",
+        'jQuery': "jquery",
+        'Popper': 'popper.js'
+    })
+  ],
+	...
+}
+
+最後到src/main.js中把BootStrap載入
+
+// 新增這兩行BootStrap的東西
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
