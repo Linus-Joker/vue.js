@@ -122,5 +122,16 @@ export default {
 
 導入之後只有樣式，要使用裡面的jQuery要再vue裡混用。
 
+在vue的入口js文件: src/main.js
+
+// 使用Bootstrap
+
+import 'bootstrap';
+
+import 'bootstrap/dist/css/bootstrap.css';
+
+到這裡 有使用BS的CSS 元件就可以動作。
+
+
 
 
