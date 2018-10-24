@@ -83,15 +83,19 @@ Components自己要加零件
 	
 import footers from "./components/footers";
 
+
 export default {
 
+
   name: "App",
+  
   
   data() {
   
     return {};
     
   },
+  
   
   components: { 
   
@@ -102,6 +106,7 @@ export default {
   }
   
 };
+
 
 </script>
 
