@@ -61,3 +61,47 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
 插入後JQuery才會有動作
+
+
+## Vue組件化
+
+用vue框架主要是管理和重用性，所以在組件上的設計很多。
+
+在components資料夾新增零件(ex:footer.vue)，做好後直接在主框架App.vue導入
+
+<script>要import 進來你自己創的零件
+	
+Components自己要加零件
+
+<template>
+<footers></footers> or <footers/>
+</template>
+
+<script>
+import footers from "./components/footers";
+export default {
+  name: "App",
+  data() {
+    return {};
+  },
+  components: { 
+    footers,
+    carousel
+  }
+};
+</script>
+
+<style lang="scss">
+	
+@import "~bootstrap/scss/bootstrap";
+
+</style>
+
+如果有導入SASS的話，相關方法看前面
+
+在最外層APP.vue導入，內層的template不用在導一次
+
+導入之後只有樣式，要使用裡面的jQuery要再vue裡混用。
+
+
+
