@@ -133,5 +133,55 @@ import 'bootstrap/dist/css/bootstrap.css';
 到這裡 有使用BS的CSS 元件就可以動作。
 
 
+# vue-router (和做組件很像)
 
+首先先在組件(components資料夾新增零件)，再導入零件
+
+Import 文件名稱 from “@components/文件名稱”
+
+記得要寫 Vue.use(Router)
+
+import Vue from 'vue'
+
+import Router from 'vue-router'
+
+import HelloWorld from '@/components/HelloWorld'
+
+Vue.use(Router)
+
+export default new Router({
+
+routes: [
+
+{
+
+path: '/',  //路徑名稱
+
+name: 'HelloWorld',  //檔案名稱
+
+component: HelloWorld  //零件名稱
+
+},
+
+{
+
+path: '/hello2',
+
+name: 'Hello2',
+
+component: Hello2
+
+},
+
+{
+
+path: '*',     //所有其他跟上面不一樣的路徑
+
+redirect: '/'  //都回到 '/' 這個主路徑
+
+}
+
+]
+
+})
 
