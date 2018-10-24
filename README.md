@@ -74,21 +74,34 @@ import 'bootstrap/dist/css/bootstrap.css';
 Components自己要加零件
 
 <template>
+	
 <footers></footers> or <footers/>
+
 </template>
 
 <script>
+	
 import footers from "./components/footers";
+
 export default {
+
   name: "App",
+  
   data() {
+  
     return {};
+    
   },
+  
   components: { 
+  
     footers,
     carousel
+    
   }
+  
 };
+
 </script>
 
 <style lang="scss">
