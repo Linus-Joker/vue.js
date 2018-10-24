@@ -24,7 +24,7 @@ $ npm run dev  (run)
    
 $ npm install --save jquery
 
-$ npm install --save popper.js
+$ npm install --save popper.js  //這裡是有用到BS的插件才裝
 
 接著到build/webpack.base.conf.js加入以下設定
 
@@ -59,3 +59,5 @@ module.exports = {
 import 'bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.css';
+
+插入後JQuery才會有動作
